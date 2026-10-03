@@ -1,0 +1,42 @@
+.pro-banner {
+  display: flex;
+  gap: 30px;
+}
+.pro-banner__title {
+  color: #000;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 75px;
+  margin-bottom: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.pro-banner__title span:first-child {
+  // color: #ff014f;
+  // color: #b048b5; //Orchid Purple;
+  background: linear-gradient(to top right, #1325e8 -5%, #d054f7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.pro-banner__description {
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.9;
+  font-weight: 400;
+  color: #292929;
+}
+.pro-banner__leftWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pro-userInfo__bottom {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 30px;
+}
+
+// .pro-banner img {
+//   filter: drop-shadow(0px 4px 8px #6e40cb);
+// }

@@ -1,0 +1,44 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+// css
+.pro-header {
+  @include flexCenter;
+  height: 81px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  background-color: #ecf0f3;
+  box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.1);
+}
+
+.pro-header__wrapper {
+  @include flexCenter;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 100%;
+}
+.header-left {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pro-navList {
+  @include flexCenter;
+  gap: 20px;
+  .pro-navItem {
+    color: #696c70;
+    transition: 0.3s;
+  }
+  .pro-navItem:hover {
+    cursor: pointer;
+    // color: #3c3e41;
+    color: #6698ff; // Sky Blue Dress
+  }
+}
